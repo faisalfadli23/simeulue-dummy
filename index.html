@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemenag Simeulue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- === HEADER === -->
+    <header>
+      <div class="container navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo Kemenag" />
+          Kemenag Simeulue
+        </div>
+        <div class="toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#regulasi">Regulasi</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- === HERO SECTION === -->
+    <section class="hero" id="beranda">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Ikhlas Beramal</h1>
+        <p>Mewujudkan pelayanan keagamaan yang profesional dan akuntabel.</p>
+        <a href="#profil" class="btn-primary">Pelajari Lebih Lanjut</a>
+      </div>
+    </section>
+
+    <!-- === PROFIL === -->
+    <section id="profil" class="container">
+      <h2 class="section-title">Profil Kementerian</h2>
+      <p>Kementerian Agama Simeulue bertugas menyelenggarakan urusan keagamaan dan mendukung pemerintahan yang bersih dan melayani.</p>
+    </section>
+
+    <!-- === LAYANAN === -->
+    <section id="layanan" class="container">
+      <h2 class="section-title">Layanan Utama</h2>
+      <div class="services">
+        <div class="service-card">
+          <i class="fas fa-kaaba fa-2x"></i>
+          <h3>Haji & Umrah</h3>
+          <p>Informasi dan layanan pendaftaran haji dan umrah.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-ring fa-2x"></i>
+          <h3>Bimbingan Pernikahan</h3>
+          <p>Bimbingan dan pencatatan pernikahan yang sah dan sakinah.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-certificate fa-2x"></i>
+          <h3>Sertifikasi Halal</h3>
+          <p>Pendaftaran dan konsultasi produk halal.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-school fa-2x"></i>
+          <h3>Madrasah</h3>
+          <p>Peningkatan mutu pendidikan berbasis agama.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === REGULASI === -->
+    <section id="regulasi" class="container">
+      <h2 class="section-title">Regulasi & Kebijakan</h2>
+      <p>Akses peraturan terbaru dan kebijakan Kemenag Simeulue.</p>
+      <a href="#" class="btn-primary" style="display:block; margin:2rem auto 0; width:max-content">Lihat Regulasi</a>
+    </section>
+
+    <!-- === BERITA === -->
+    <section id="berita" class="container">
+      <h2 class="section-title">Berita Terbaru</h2>
+      <div class="news">
+        <div class="news-item">
+          <img src="jemaah.jpg" alt="Berita Haji" />
+          <div class="news-content">
+            <h4>Pelepasan Jamaah Haji</h4>
+            <p>Presiden melepas kloter pertama jamaah haji dari Bandara Kualanamu.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="halal.jpeg" alt="Berita Halal" />
+          <div class="news-content">
+            <h4>Digitalisasi Sertifikasi Halal</h4>
+            <p>Sistem online untuk sertifikasi halal resmi diluncurkan Kemenag.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="beasiswa.jpg" alt="Beasiswa Santri" />
+          <div class="news-content">
+            <h4>Beasiswa Santri</h4>
+            <p>Beasiswa penuh S1 bagi santri berprestasi kini dibuka kembali.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === KONTAK === -->
+    <section id="kontak" class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="contact">
+        <h3>Kemenag Kabupaten Simeulue</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Jl. Simeulue No. 1</p>
+          <p><i class="fas fa-phone"></i> (021) 3811679</p>
+          <p><i class="fas fa-envelope"></i> info@kemenag.go.id</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer>
+      &copy; 2025 Kementerian Agama Simeulue. All rights reserved.
+    </footer>
+
+    <!-- === SCRIPT === -->
+    <script>
+      const toggle = document.getElementById("nav-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      toggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
